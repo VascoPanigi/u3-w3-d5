@@ -1,7 +1,14 @@
 import { Col, Row } from "react-bootstrap";
 import SongCard from "./SongCard";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 
 const ResultsRow = () => {
+  const dispatch = useDispatch();
+  const songs = useSelector((state) => state.homepageResults.content);
+
+  //   useEffect(() => dispatch(getJobsAction("marilyn-manson")));
+
   return (
     <Row>
       <Col xs={10}>
