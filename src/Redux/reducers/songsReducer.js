@@ -1,9 +1,10 @@
 import { GET_FIRST_ROW_SONGS, GET_SECOND_ROW_SONGS, GET_THIRD_ROW_SONGS } from "../actions";
 
 const initialState = {
-  first_row: [],
-  second_row: [],
-  third_row: [],
+  content: {},
+  first_row: {},
+  second_row: {},
+  third_row: {},
 };
 
 const songsReducer = (state = initialState, action) => {
@@ -23,6 +24,11 @@ const songsReducer = (state = initialState, action) => {
         ...state,
         third_row: action.payload,
       };
+    // case GET_SONGS:
+    //   return {
+    //     ...state,
+    //     content: action.payload,
+    //   };
     default:
       return state;
   }

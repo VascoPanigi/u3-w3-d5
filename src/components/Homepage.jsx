@@ -22,9 +22,6 @@ const HomePage = () => {
                 </Col>
               </Row>
               <ResultsRow />
-              <ResultsRow />
-              <ResultsRow />
-              <ResultsRow />
             </Col>
           </Row>
         </Container>

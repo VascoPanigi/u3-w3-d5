@@ -1,6 +1,10 @@
 export const GET_FIRST_ROW_SONGS = "GET_FIRST_ROW_SONGS";
 export const GET_SECOND_ROW_SONGS = "GET_SECOND_ROW_SONGS";
 export const GET_THIRD_ROW_SONGS = "GET_THIRD_ROW_SONGS";
+// export const GET_SONGS = "GET_SONGS";
+export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
+export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES";
+export const SELECTED = "SELECTED";
 
 export const getSongsAction = (name, position) => {
   return async (dispatch) => {
@@ -9,6 +13,10 @@ export const getSongsAction = (name, position) => {
       const response = await fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=" + name);
       if (response.ok) {
         let data = await response.json();
+        // dispatch({
+        //   type: GET_SONGS,
+        //   payload: data,
+        // });
         switch (position) {
           case "first":
             dispatch({
