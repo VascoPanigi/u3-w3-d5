@@ -95,6 +95,10 @@ ul {
   background-color: #282828;
 }
 
+.playerControls {
+  width: 100%;
+}
+
 .playerControls div {
   justify-content: space-between;
 }
@@ -175,4 +179,22 @@ ul {
 
 .btn {
   display: inline-block;
+}
+
+.cover-image-player {
+  width: 60px;
+  height: 60px;
+}
+
+.title-song-player {
+  font-size: 0.9rem;
+}
+
+.artist-name-player {
+  font-size: 0.9rem;
+}
+
+.player-card-container {
+  background-color: transparent;
+  border: 1px solid transparent;
 }

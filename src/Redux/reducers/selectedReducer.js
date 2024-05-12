@@ -1,7 +1,7 @@
 import { SELECTED } from "../actions/index";
 
 const initialState = {
-  selected: null,
+  selected: undefined,
 };
 
 const selectedReducer = (state = initialState, action) => {

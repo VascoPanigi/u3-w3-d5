@@ -18,7 +18,7 @@ const ResultsRow = () => {
       dispatch(getSongsAction("chet-baker", "third"));
       console.log(songs);
 
-      // console.log(songs.first_row.data);
+      console.log(songs.first_row.data);
       // console.log(songs.first_row.data.slice(0, 4));
 
       console.log("sono un componenDidMount");
