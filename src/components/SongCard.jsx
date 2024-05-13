@@ -15,6 +15,7 @@ const SongCard = (song) => {
           dispatch({ type: SELECTED, payload: song });
         }}
       />
+      <i className="bi bi-heart favourite-icon"></i>
       <p>
         Track: {song.song.title}
         <br />
